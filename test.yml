@@ -1,0 +1,20 @@
+# This is a comment
+
+# &表示一個錨點
+person: &person
+  car:
+    - 1
+    - 2
+
+# *可以將錨點的資料複製一份進來
+person2: *person
+
+# --- 分割兩份資料的概念
+---
+house: [1,2,3]
+content: |
+  一二三
+  四五六
+
+
+
